@@ -108,6 +108,12 @@ streamlit run jupiter_faq_bot.py
 
 This opens the app in your browser (usually at `http://localhost:8501`).
 
+![Screenshot 2025-06-27 150720](https://github.com/user-attachments/assets/c6ebf76b-2cb8-4ce8-8d4c-b73d62dbe9a2)
+
+![Screenshot 2025-06-27 150822](https://github.com/user-attachments/assets/e1369b5c-530c-4d44-80f9-5a28e9a38798)
+
+![Screenshot 2025-06-27 151057](https://github.com/user-attachments/assets/7195f5a5-605c-4383-9dab-856258bb4626)
+
 ---
 
 ## 📁 Project Structure
@@ -144,17 +150,6 @@ Jupiter-FAQ-Bots/
   * Confirm Chrome is installed and updated.
   * Match ChromeDriver version to your Chrome.
   * Verify `chromedriver.exe` path is correct in the script.
-
----
-
-## 📬 Questions or Issues?
-
-If you face any issues, please check the console logs first. You may also consult the documentation for:
-
-* [Selenium](https://selenium-python.readthedocs.io/)
-* [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
-* [sentence-transformers](https://www.sbert.net/)
-* [Streamlit](https://docs.streamlit.io/)
 
 ---
 
