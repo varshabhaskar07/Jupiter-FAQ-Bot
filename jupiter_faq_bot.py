@@ -212,9 +212,9 @@ def main():
 
 if __name__ == "__main__":
     # Uncomment the following lines to scrape and preprocess FAQs
-    # faqs_df = scrape_faqs()
-    # preprocessed_df = preprocess_faqs(faqs_df)
-    # preprocessed_df.to_csv('jupiter_faqs_preprocessed.csv', index=False)
-    # print("FAQs scraped and preprocessed successfully!")
+    faqs_df = scrape_faqs()
+    preprocessed_df = preprocess_faqs(faqs_df)
+    preprocessed_df.to_csv('jupiter_faqs_preprocessed.csv', index=False)
+    print("FAQs scraped and preprocessed successfully!")
     # Run the Streamlit app
     main()
