@@ -116,7 +116,7 @@ class FAQBot:
         self.df_faqs = pd.read_csv('jupiter_faqs_preprocessed.csv')
         self.df_faqs.columns = ['Question', 'Answer', 'Category']
         # Explicitly load the model to CPU
-        self.model = SentenceTransformer('all-MiniLM-L12-v2', device='cpu')
+        self.model = SentenceTransformer('all-MiniLM-L12-v2') # Removed device='cpu'
         self.combined_texts = (self.df_faqs['Question'] + " " + self.df_faqs['Answer']).tolist()
         self.faq_embeddings = self.model.encode(self.combined_texts, convert_to_tensor=True)
 
