@@ -1,7 +1,7 @@
 selenium
 pandas
 sentence-transformers
-torch
+torch==2.2.0+cpu # Specify a CPU-only version of torch
 streamlit
 python-dotenv
 google-generativeai
