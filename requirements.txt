@@ -1,7 +1,6 @@
-selenium
 pandas
 sentence-transformers
-torch==2.2.0+cpu # Specify a CPU-only version of torch
+torch # Removed +cpu suffix for broader compatibility
 streamlit
 python-dotenv
 google-generativeai
