@@ -4,6 +4,8 @@ This project implements a **Streamlit-based FAQ bot for Jupiter**, designed to a
 
 ---
 
+# Live Demo : https://jupiter-faq-bot-9udq7zvqf4nmeawfgd3yaq.streamlit.app/
+
 ## 🚀 Features
 
 - **Web Scraping**: Extracts FAQs from Jupiter’s website using Selenium and BeautifulSoup.
