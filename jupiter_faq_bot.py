@@ -9,6 +9,10 @@ import numpy as np
 import google.generativeai as genai
 import os
 import streamlit as st
+from dotenv import load_dotenv # Import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 def scrape_faqs():
     # Setup driver
@@ -161,6 +165,12 @@ def main():
     
     # Initialize bot
     # GEMINI_API_KEY = "------------------"  # Replace with your key
+    # Retrieve API key from environment variables
+    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+    if not GEMINI_API_KEY:
+        st.error("GEMINI_API_KEY not found. Please set it in your .env file.")
+        return
+
     bot = FAQBot(GEMINI_API_KEY)
     
     # Initialize session state for user_query if not already present
@@ -201,9 +211,10 @@ def main():
         st.info("Thank you for using the Jupiter FAQ Assistant. You can close this browser tab.")
 
 if __name__ == "__main__":
-    # Uncomment to run scraping and preprocessing (only needed once)
-    # df = scrape_faqs()
-    # df = preprocess_faqs(df)
-    
+    # Uncomment the following lines to scrape and preprocess FAQs
+    # faqs_df = scrape_faqs()
+    # preprocessed_df = preprocess_faqs(faqs_df)
+    # preprocessed_df.to_csv('jupiter_faqs_preprocessed.csv', index=False)
+    # print("FAQs scraped and preprocessed successfully!")
     # Run the Streamlit app
     main()
